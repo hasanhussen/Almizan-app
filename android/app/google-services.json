@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1021141888742",
+    "project_id": "almizan-20a07",
+    "storage_bucket": "almizan-20a07.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1021141888742:android:5528f05310b89d5979d527",
+        "android_client_info": {
+          "package_name": "com.example.ems_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCiZgmlrTZv0MdqMrDOVPzajAkMVxdbIkc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
