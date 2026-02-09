@@ -7,7 +7,6 @@ import 'package:almizan/models/user.dart';
 import 'package:almizan/state/login_state.dart';
 import 'package:almizan/services/cache_helper.dart';
 import 'package:almizan/services/dio_helper.dart';
-import 'package:almizan/views/favourite/favourite.dart';
 
 import '../views/choose_subject.dart';
 

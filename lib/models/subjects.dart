@@ -25,7 +25,7 @@ class Subject {
   });
 
   Subject.fromJson(Map<String, dynamic> json) {
-    id = json['id'] ?? 0;
+    id = _toInt(json['id']) ?? 0;
     name = json['name'] ?? '';
     year = json['year'] ?? '';
     semester = json['semester'] ?? '';
@@ -62,5 +62,13 @@ class Subject {
       data['specialty'] = this.specialty!.map((v) => v.toJson()).toList();
     }
     return data;
+  }
+
+  int? _toInt(dynamic value) {
+    if (value == null) return null;
+    if (value is int) return value;
+    if (value is String) return int.tryParse(value);
+    if (value is double) return value.toInt();
+    return null;
   }
 }

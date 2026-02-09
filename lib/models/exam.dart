@@ -16,12 +16,15 @@ class Exams {
   });
 
   Exams.fromJson(Map<String, dynamic> json) {
-    id = json['id'] ?? 0; // تعيين قيمة افتراضية
-    name = json['name'] ?? ''; // تعيين قيمة افتراضية
-    subjectId = json['subject_id'] ?? 0; // تعيين قيمة افتراضية
-    actualDuration = json['actual_duration'] ?? ''; // تعيين قيمة افتراضية
-    createdAt = json['created_at'] ?? ''; // تعيين قيمة افتراضية
-    updatedAt = json['updated_at'] ?? ''; // تعيين قيمة افتراضية
+    id = _toInt(json['id']) ?? 0; 
+    name = json['name']?.toString() ?? ''; 
+    subjectId = _toInt(json['subject_id']) ?? 0;
+    
+    // تصحيح الخطأ: لا يمكن وضع '' في متغير int
+    actualDuration = _toInt(json['actual_duration']) ?? 0; 
+    
+    createdAt = json['created_at']?.toString() ?? ''; 
+    updatedAt = json['updated_at']?.toString() ?? ''; 
   }
 
   Map<String, dynamic> toJson() {
@@ -33,5 +36,14 @@ class Exams {
     data['created_at'] = this.createdAt;
     data['updated_at'] = this.updatedAt;
     return data;
+  }
+
+  // دالة التحويل لضمان عدم حدوث Type Mismatch
+  int? _toInt(dynamic value) {
+    if (value == null) return null;
+    if (value is int) return value;
+    if (value is String) return int.tryParse(value);
+    if (value is double) return value.toInt();
+    return null;
   }
 }

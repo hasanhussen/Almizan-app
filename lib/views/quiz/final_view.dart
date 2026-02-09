@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:almizan/cubit/question_cubit.dart';
 import 'package:almizan/general/color.dart';
-import 'package:almizan/general/constant.dart';
 import 'package:almizan/views/quiz/report.dart';
 
 class FinalView extends StatelessWidget {

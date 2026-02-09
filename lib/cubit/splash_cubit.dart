@@ -5,9 +5,7 @@ import 'package:page_transition/page_transition.dart';
 import 'package:almizan/services/cache_helper.dart';
 import 'package:almizan/state/splash_state.dart';
 import 'package:almizan/views/app_info/onBoarding.dart';
-import 'package:almizan/views/auth/login.dart';
-import 'package:almizan/views/auth/profile.dart';
-import 'package:almizan/views/quiz/myexam.dart';
+
 
 class SplashCubit extends Cubit<SplashState> {
   double visibleImage = 0;

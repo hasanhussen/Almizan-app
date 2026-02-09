@@ -52,8 +52,8 @@ class QuestionModel {
   }
 
   QuestionModel.fromJson(Map<String, dynamic> json) {
-    id = json['id'];
-    examId = json['exam_id'];
+    id = _toInt(json['id']);
+    examId = _toInt(json['exam_id']);
     questionText = json['question_text'];
     createdAt = json['created_at'];
     updatedAt = json['updated_at'];
@@ -78,5 +78,13 @@ class QuestionModel {
       data['answers'] = this.answers!.map((v) => v.toJson()).toList();
     }
     return data;
+  }
+
+  int? _toInt(dynamic value) {
+    if (value == null) return null;
+    if (value is int) return value;
+    if (value is String) return int.tryParse(value);
+    if (value is double) return value.toInt();
+    return null;
   }
 }

@@ -2,15 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:almizan/cubit/question_cubit.dart';
 import 'package:almizan/general/color.dart';
-import 'package:almizan/models/subjects.dart';
 import 'package:almizan/state/question_state.dart';
 import 'package:almizan/views/quiz/final_view.dart';
-import 'package:almizan/views/quiz/report.dart';
 import 'package:almizan/widgets/awnser_widget.dart';
 import 'package:almizan/widgets/fail_training.dart';
 import 'package:almizan/widgets/finish_training.dart';
-import 'package:fluttertoast/fluttertoast.dart';
-import 'package:timer_count_down/timer_count_down.dart';
 
 import '../../core/core.dart';
 
@@ -154,30 +150,6 @@ class QuizPage extends StatelessWidget {
                           ),
                           style: const TextStyle(color: Colors.white),
                         ),
-
-                        //  Countdown(
-                        //   seconds: QuestionCubit.get(context).duration!,
-                        //   build: (BuildContext context, double time) => Text(
-                        //     formatTime2(time.toInt(),
-                        //         QuestionCubit.get(context).duration!),
-                        //     style: const TextStyle(color: Colors.white),
-                        //   ),
-                        //   interval: const Duration(milliseconds: 100),
-                        //   onFinished: () {
-                        //     //QuestionCubit.get(context).finish(examid);\
-                        //     if (QuestionCubit.get(context).answers.isNotEmpty) {
-                        //       Fluttertoast.showToast(
-                        //         msg: "!لم تجب على أي سؤال",
-                        //         toastLength: Toast.LENGTH_SHORT,
-                        //         gravity: ToastGravity.SNACKBAR,
-                        //         timeInSecForIosWeb: 1,
-                        //         backgroundColor: primary,
-                        //         textColor: Colors.white,
-                        //         fontSize: 13,
-                        //       );
-                        //     }
-                        //   },
-                        // ),
                       ),
                     ],
                     elevation: 0,

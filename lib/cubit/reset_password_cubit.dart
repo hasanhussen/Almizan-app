@@ -4,13 +4,7 @@ import 'package:almizan/views/auth/verify_code.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:page_transition/page_transition.dart';
-import 'package:almizan/models/user.dart';
-import 'package:almizan/state/login_state.dart';
-import 'package:almizan/services/cache_helper.dart';
 import 'package:almizan/services/dio_helper.dart';
-import 'package:almizan/views/favourite/favourite.dart';
-
-import '../views/choose_subject.dart';
 
 class ResetPasswordCubit extends Cubit<ResetPasswordState> {
   ResetPasswordCubit() : super(ResetPasswordInitialState());

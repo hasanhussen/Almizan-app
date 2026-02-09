@@ -10,23 +10,15 @@ import 'package:page_transition/page_transition.dart';
 import 'package:almizan/cubit/question_type_cubit.dart';
 import 'package:almizan/general/color.dart';
 import 'package:almizan/models/subjects.dart';
-import 'package:almizan/models/type.dart';
-import 'package:almizan/models/years.dart';
-import 'package:almizan/services/cache_helper.dart';
 
 import 'package:almizan/state/question_type_state.dart';
 import 'package:almizan/views/app_info/app_info.dart';
 import 'package:almizan/views/app_info/policy_and_privacy.dart';
 import 'package:almizan/views/auth/login.dart';
 import 'package:almizan/views/auth/profile.dart';
-import 'package:almizan/views/quiz/myexam.dart';
-import 'package:almizan/widgets/select_subject.dart';
-import 'package:almizan/widgets/select_subject_one.dart';
-import 'package:almizan/widgets/select_type.dart';
-import 'package:almizan/widgets/select_year.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-import '../models/question_type.dart';
+
 
 class ChooseSubject extends StatelessWidget {
   const ChooseSubject({super.key});
@@ -189,16 +181,7 @@ class ChooseSubject extends StatelessWidget {
                                   (route) => false,
                                 );
                               });
-                              // إذا وافق المستخدم على تسجيل الخروج
-                              // CacheHelper.clearData();
-                              // Navigator.pushReplacement(
-                              //   context,
-                              //   PageTransition(
-                              //     type: PageTransitionType.leftToRight,
-                              //     child: const Login(),
-                              //     duration: const Duration(milliseconds: 800),
-                              //   ),
-                              // );
+                             
                             }
                           },
                           child: const ListTile(
@@ -338,17 +321,7 @@ class ChooseSubject extends StatelessWidget {
                                                                     .name!,
                                                           );
                                     
-                                                          // QuestionTypeCubit.get(
-                                                          //         context)
-                                                          //     .selectSubject(
-                                                          //         subject[index]
-                                                          //             .id!,
-                                                          //         subject[index]
-                                                          //             .exams![0]
-                                                          //             .id!,
-                                                          //         subject[index]
-                                                          //             .name!,
-                                                          //         context);
+                                                          
                                                         },
                                                         subjectId:
                                                             subject[index].id!,
@@ -369,14 +342,7 @@ class ChooseSubject extends StatelessWidget {
                                                         subject[index].name!,
                                                   );
                                     
-                                            // QuestionTypeCubit.get(context)
-                                            //     .selectSubject(
-                                            //         subject[index].id!,
-                                            //         subject[index]
-                                            //             .exams![0]
-                                            //             .id!,
-                                            //         subject[index].name!,
-                                            //         context);
+                                            
                                           },
                                           child: Container(
                                             decoration: BoxDecoration(

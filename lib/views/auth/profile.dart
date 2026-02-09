@@ -93,20 +93,6 @@ class ProfileCard extends StatelessWidget {
                                     ),
                                   ],
                                 ),
-                                // Container(
-                                //   padding: const EdgeInsets.symmetric(
-                                //       horizontal: 10, vertical: 4),
-                                //   decoration: BoxDecoration(
-                                //     color: Colors.black87,
-                                //     borderRadius: BorderRadius.circular(6),
-                                //   ),
-                                //   child: Text(
-                                //     "STUDENT",
-                                //     style: TextStyle(
-                                //         color: Colors.white,
-                                //         fontWeight: FontWeight.bold),
-                                //   ),
-                                // ),
                               ],
                             ),
                           ),

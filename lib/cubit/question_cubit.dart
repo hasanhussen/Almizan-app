@@ -13,7 +13,6 @@ import 'package:almizan/services/cache_helper.dart';
 import 'package:almizan/services/dio_helper.dart';
 import 'package:almizan/state/question_state.dart';
 import 'package:almizan/views/quiz/quiz_finished.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 
 class QuestionCubit extends Cubit<QuestionState> {
   static late QuestionCubit instance;

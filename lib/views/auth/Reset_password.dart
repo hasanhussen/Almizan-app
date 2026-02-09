@@ -1,14 +1,8 @@
 import 'package:almizan/cubit/reset_password_cubit.dart';
 import 'package:almizan/state/reset_password_state.dart';
-import 'package:almizan/views/auth/Reset_password.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:almizan/views/choose_subject.dart';
-import 'package:page_transition/page_transition.dart';
-import 'package:almizan/cubit/login_cubit.dart';
 import 'package:almizan/general/color.dart';
-import 'package:almizan/general/constant.dart';
-import 'package:almizan/state/login_state.dart';
 
 class ResetPassword extends StatelessWidget {
   const ResetPassword({Key? key}) : super(key: key);

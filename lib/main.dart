@@ -11,22 +11,6 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'cubit/bloc_observer.dart';
 import 'general/color.dart';
 
-// ========== دالة معالجة الإشعارات في الخلفية ==========
-// @pragma('vm:entry-point')
-// Future<void> _firebaseMessagingBackgroundHandler(RemoteMessage message) async {
-//   await Firebase.initializeApp();
-//   final prefs = await SharedPreferences.getInstance();
-
-//   if (message.data['type'] == "exam_started") {
-//     await prefs.setBool('needs_refresh', true);
-//     print('📱 تم تعيين needs_refresh = true');
-//   }
-
-//   if (message.data['type'] == "exam_ended") {
-//     await prefs.setString('ended_exam_id', message.data['exam_id'] ?? '');
-//     print('📱 تم تعيين ended_exam_id = ${message.data['exam_id']}');
-//   }
-// }
 
 Future<void> main() async {
   SystemChrome.setSystemUIOverlayStyle(
@@ -41,8 +25,6 @@ Future<void> main() async {
   await CacheHelper.init();
   await Firebase.initializeApp();
 
-  // FirebaseMessaging.onBackgroundMessage(_firebaseMessagingBackgroundHandler);
-  //secure();
   runApp(
     const MyApp(),
   );

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:almizan/models/question_type.dart';
 import 'package:almizan/models/subjects.dart';
 
 class SelectSubjectsOneWidget extends StatefulWidget {

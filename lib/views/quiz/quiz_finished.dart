@@ -1,10 +1,9 @@
-import 'package:almizan/cubit/question_cubit.dart';
+
 import 'package:almizan/models/answer.dart';
 import 'package:almizan/views/choose_subject.dart';
 import 'package:flutter/material.dart';
 import 'package:almizan/general/color.dart';
 import 'package:almizan/general/constant.dart';
-import 'package:almizan/models/favourite.dart';
 import 'package:almizan/models/question_model.dart';
 import 'package:almizan/views/quiz/check_answer.dart';
 

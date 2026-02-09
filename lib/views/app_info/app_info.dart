@@ -3,11 +3,7 @@ import 'package:almizan/widgets/app_info_background_header.dart';
 import 'package:almizan/widgets/app_info_content.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:page_transition/page_transition.dart';
-import 'package:url_launcher/url_launcher.dart';
-
 import 'package:almizan/general/color.dart';
-import 'package:almizan/views/app_info/policy_and_privacy.dart';
 
 class AppInfo extends StatelessWidget {
   const AppInfo({Key? key}) : super(key: key);

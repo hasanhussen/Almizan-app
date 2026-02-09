@@ -17,13 +17,4 @@ class AppInfoModel {
     instagram = json['instagram'] ?? '';
     facebook = json['facebook'] ?? '';
   }
-
-  //   Answers.fromJson(Map<String, dynamic> json) {
-  //       id = json['id'];
-  //       questionId = json['question_id'];
-  //       answerText = json['answer_text'];
-  //       isCorrect = json['is_correct'];
-  //       createdAt = json['created_at'];
-  //       updatedAt = json['updated_at'];
-  // }
 }

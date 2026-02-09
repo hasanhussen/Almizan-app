@@ -1,4 +1,4 @@
-import 'package:almizan/models/about.dart';
+
 
 abstract class AppInfoState {}
 
